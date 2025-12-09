@@ -2,7 +2,7 @@
 
 import { Button, buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { AxeIcon, MenuIcon } from "lucide-react"
+import { AxeIcon, ExternalLinkIcon, MenuIcon } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
@@ -49,12 +49,12 @@ export const Header = () => {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
                   )}
                 >
-                  Home
+                  Главная
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/company"
+                  href="/news"
                   className={cn(
                     "block py-2 pr-4 pl-3 rounded lg:p-0",
                     pathname === '/company'
@@ -62,34 +62,23 @@ export const Header = () => {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
                   )}
                 >
-                  Company
+                  Новости
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/marketplace"
+                <a
+                  href="https://market.korzilla.ru"
                   className={cn(
                     "block py-2 pr-4 pl-3 rounded lg:p-0",
-                    pathname === '/marketplace'
-                      ? "lg:text-primary/70 bg-primary/70 lg:bg-transparent"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
+                    "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70",
+                    "inline-flex items-center gap-2"
                   )}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  Marketplace
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features"
-                  className={cn(
-                    "block py-2 pr-4 pl-3 rounded lg:p-0",
-                    pathname === '/features'
-                      ? "lg:text-primary/70 bg-primary/70 lg:bg-transparent"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
-                  )}
-                >
-                  Features
-                </Link>
+                  Маркетплейс
+                  <ExternalLinkIcon className="size-4" />
+                </a>
               </li>
               <li>
                 <Link
@@ -101,7 +90,7 @@ export const Header = () => {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
                   )}
                 >
-                  Team
+                  О нас
                 </Link>
               </li>
               <li>
@@ -114,7 +103,20 @@ export const Header = () => {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
                   )}
                 >
-                  Contact
+                  Контакты
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/features"
+                  className={cn(
+                    "block py-2 pr-4 pl-3 rounded lg:p-0",
+                    pathname === '/features'
+                      ? "lg:text-primary/70 bg-primary/70 lg:bg-transparent"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground lg:hover:bg-transparent lg:hover:text-primary/70"
+                  )}
+                >
+                  Помощь
                 </Link>
               </li>
             </ul>

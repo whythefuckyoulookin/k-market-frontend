@@ -1,7 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group";
-import { ArrowRightIcon, BadgeRussianRubleIcon, BanknoteIcon, BriefcaseBusinessIcon, ChartLineIcon, CheckIcon, ChevronRightIcon, ClipboardListIcon, CreditCardIcon, EarthIcon, GalleryVerticalEndIcon, SearchIcon, ShoppingBagIcon, UndoDotIcon, User2Icon, UserCircle2Icon } from "lucide-react";
+import { ArrowRightIcon, BadgeRussianRubleIcon, BanknoteIcon, BellRingIcon, BookCheckIcon, BriefcaseBusinessIcon, ChartLineIcon, CheckIcon, ChevronRightIcon, ClipboardListIcon, CreditCardIcon, EarthIcon, GalleryVerticalEndIcon, NewspaperIcon, SearchIcon, ShoppingBagIcon, StoreIcon, UndoDotIcon, User2Icon, UserCircle2Icon } from "lucide-react";
 
 export default () => (
   <>
@@ -9,22 +9,21 @@ export default () => (
       <div className="max-w-7xl px-4 py-8 mx-auto sm:py-16 lg:py-24 pt-20 sm:pt-24 lg:pt-32">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">
-            We invest in the world's potential
+            Korzilla Admin
           </h1>
           <p className="max-w-3xl mx-auto mt-4 text-muted-foreground md:text-lg lg:text-xl">
-            Here at flowbite we focus on markets where technology, innovation, and
-            capital can unlock long-term value and drive economic growth.
+            Идеальное место для управления вашим сайтом.
           </p>
         </div>
         <div className="flex flex-col gap-4 mt-8 sm:flex-row sm:justify-center">
           <a href="#" className={buttonVariants()}>
-            Free trial for 30 days
+            Зарегистрироваться
           </a>
           <a
             href="#"
             className={buttonVariants({ variant: "outline" })}
           >
-            Pricing &amp; FAQ
+            Войти 
             <ArrowRightIcon />
           </a>
         </div>
@@ -86,68 +85,57 @@ export default () => (
     <section>
       <div className="max-w-7xl px-4 py-8 mx-auto sm:py-16 lg:py-24">
         <div className="grid items-center grid-cols-1 gap-12 xl:grid-cols-3 lg:gap-16">
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Designed for strong teams like yours
+              Все в одном месте
             </h2>
             <p className="text-muted-foreground sm:text-xl">
-              Here we focus on markets where creativity and innovation can unlock
-              long-term value and growth.
+              Теперь не будет никаких недопониманий.
             </p>
-            <div>
-              <a href="#" className={buttonVariants({ variant: "link" })}>
-                Learn more
-                <ChevronRightIcon />
-              </a>
-            </div>
           </div>
           <div className="grid grid-cols-1 gap-8 xl:col-span-2 sm:grid-cols-2">
             <div>
               <div className="flex items-center justify-center size-12 rounded bg-primary/20">
-                <ChartLineIcon className="size-8 text-primary" />
+                <StoreIcon className="size-8 text-primary" />
               </div>
               <h3 className="mt-5 text-xl font-bold">
-                Marketing
+                Маркетплейс
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Collaborate seamlessly with all the organization and hit your
-                marketing goals every month with our marketing plan.
+                Можно приобрести интеграцию на сайт, которая тут же начнет работать на вас
               </p>
             </div>
             <div>
               <div className="flex items-center justify-center size-12 rounded bg-primary/20">
-                <BriefcaseBusinessIcon className="size-8 text-primary" />
+                <BookCheckIcon className="size-8 text-primary" />
               </div>
               <h3 className="mt-5 text-xl font-bold">
-                Business Automation
+                Система тикетов
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Auto-assign tasks, send Slack messages, and much more. Now power
-                up with hundreds of new templates to help you get started.
+                Своя система запросов в нашу поддержку и быстрый ответ на ваши вопросы
               </p>
             </div>
             <div>
               <div className="flex items-center justify-center size-12 rounded bg-primary/20">
-                <GalleryVerticalEndIcon className="size-8 text-primary" />
+                <BellRingIcon className="size-8 text-primary" />
               </div>
               <h3 className="mt-5 text-xl font-bold">
-                Enterprise Design
+                Уведомления с ваших сайтов
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Craft beautiful, delightful experiences for both marketing and
-                product with real cross-company collaboration.
+                Получайте уведомления с заказов из ваших сайтов прямо на телефон или почту
               </p>
             </div>
             <div>
               <div className="flex items-center justify-center size-12 rounded bg-primary/20">
-                <BadgeRussianRubleIcon className="size-8 text-primary" />
+                <NewspaperIcon className="size-8 text-primary" />
               </div>
               <h3 className="mt-5 text-xl font-bold">
-                Finance
+                Новости
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Audit-proof software built for critical financial operations like
-                month-end close and quarterly budgeting.
+                Будьте в курсе всех новостей о работе ваших сайтов и интеграций
               </p>
             </div>
           </div>
@@ -160,12 +148,10 @@ export default () => (
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <div className="sm:text-lg">
               <h2 className="mb-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Work with tools you already use
+                Работайте с сайтами быстрее
               </h2>
               <p className="mb-8 lg:text-xl text-muted-foreground">
-                Deliver great service experiences fast - without the complexity of
-                traditional ITSM solutions.Accelerate critical development work,
-                eliminate toil, and deploy changes with ease.
+                С Korzilla Admin вы сможете быстро получить нужную вам информацию о сайте
               </p>
               <ul className="pt-8 space-y-5 border-t my-7">
                 <li className="flex space-x-3">
@@ -173,7 +159,7 @@ export default () => (
                     <CheckIcon className="w-3.5 h-3.5" />
                   </div>
                   <span className="text-base font-medium leading-tight">
-                    Continuous integration and deployment
+                    Безграничное дополнение сайтов интеграциями
                   </span>
                 </li>
                 <li className="flex space-x-3">
